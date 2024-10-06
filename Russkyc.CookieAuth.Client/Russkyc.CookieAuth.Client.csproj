@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Russkyc.CookieAuth.Client</Title>
+        <Authors>russkyc</Authors>
+        <Description>CookieAuth Utilities</Description>
+        <Copyright>russkyc 2024</Copyright>
+        <PackageTags>cookie cookie-auth blazor-auth auth</PackageTags>
+        <PackageIcon>PackageIcon.png</PackageIcon>
+        <PackageProjectUrl>https://github.com/russkyc/blazor-cookie-auth</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/russkyc/blazor-cookie-auth</RepositoryUrl>
+        <Version>1.0.0</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.8"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Russkyc.CookieAuth.Core\Russkyc.CookieAuth.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="PackageIcon.png" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+</Project>
